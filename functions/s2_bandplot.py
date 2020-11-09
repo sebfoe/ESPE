@@ -1,3 +1,13 @@
+"""
+Function for plotting all bands except the sen2cor scene classification (scl)
+and the not Level 2A included cirrus band.
+Usage : s2_bandplot(dataset, timestep)
+            dataset: xarray with BDC preprocessed Sentinel-2 tiles
+            timestep: integer variable, starting with 0, ending with the last dataset entry
+"""
+
+
+
 def s2_bandplot(dataset, timestep):
     #subplot(r,c) provide the no. of rows and columns
     fig, axes = plt.subplots(3,4, figsize=(24,12), sharex = True, sharey = True) 
