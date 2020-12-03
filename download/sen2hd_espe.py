@@ -7,12 +7,14 @@ Created on Mon Jul 20 10:59:01 2020
 
 Download of Sentinel-2 products covering Bavaria 
 
-Project: ESPE
-Username: lsfe
-Password: ESPE2020
-E-mail: sebastian.foertsch@uni-wuerzburg.de
-Firstname: Lehrstuhl
-Lastname: Fernerkundung
+Project: <PROJECT ID>
+Username: <USER>
+Password: <YOUR PASSWORD>
+E-mail: <FOUR EMAIL>
+Firstname: <YOUR FN>
+Lastname: <YOUR LN>
+
+#%% is a spyder-editor cell
  
 """
 from sentinelsat import SentinelAPI
@@ -41,8 +43,8 @@ points = ['POINT(10 51)', # 32UNB
  'POINT(12 47)', # 32TQT
  'POINT(13.5 47)'] # 32TUN
 #
-user = 'lsfe'
-password = 'ESPE2020'
+user = 'USER'
+password = 'PASSWORD'
 api = SentinelAPI(user, password, 'https://scihub.copernicus.eu/dhus')
 products = {}  
 #%%
@@ -55,7 +57,7 @@ def sen2hd(product, output):
      
     for q in points:
         products.update(api.query(q,
-                                  date=('NOW-5DAYS', 'NOW'),
+                                  date=('NOW-7DAYS', 'NOW'),
                                   producttype=product,
                                   cloudcoverpercentage=(0,100)))
         
@@ -65,9 +67,9 @@ if __name__ == '__main__':
     sen2hd()
     
 #%%
-for q in points:
-         products.update(api.query(q,
-                                  date=('NOW-1DAYS', 'NOW'),
-                                  producttype='S2MSI2A',
-                                  cloudcoverpercentage=(0,100)))
+#for q in points:
+ #        products.update(api.query(q,
+  #                                date=('NOW-1DAYS', 'NOW'),
+   #                               producttype='S2MSI2A',
+    #                              cloudcoverpercentage=(0,100)))
 #        api.download_all(products, output)
