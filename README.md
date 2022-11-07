@@ -1,4 +1,4 @@
-# The Bavarian Data Cube (BYDC)
+# ESPE (Emissionsquellen aus Satellitendaten für eine verbesserte Vorhersage des Pollenflugs in Bayern)
 
-The BDC is part of the ESPE project at University of Wuerzburg with the aim to optimize forest classifications using a state-of-the-art cloud environment.
+The ESPE project at the University of Wuerzburg has the aim to optimize land surface classifications using a state-of-the-art work chains.
 
