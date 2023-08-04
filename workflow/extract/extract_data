@@ -1,3 +1,3 @@
 First step of the machine learning process is utilizing ground truth information, i.e. combining them with satellite measurements.
-Groudn truth can be used as vector information supplied via geojson or esri shape file.
-Satellite data is used from public STAC catalogs.
+Ground truth can be used as vector information supplied via geojson or esri shape file.
+Satellite data is used from public STAC catalogs, which guarantee a maximal working felxibility.
