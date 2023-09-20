@@ -1,2 +1,2 @@
 Present a basic workflow based on Open Data Cube developments with the focus on forestry.
-
+The example notebook named Phenology runs on JupyterLabs e.g. of the Microsoft Planetary Computer, Google Colab or the EOLab as well as on local devices.
