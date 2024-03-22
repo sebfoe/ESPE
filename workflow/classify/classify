@@ -1,1 +1,2 @@
-This example presents the classifying steps using local Sentinel-2 data by utilizing griund truth informationfrom annual and monthly data.
+This example presents the classifying steps using Sentinel-2 data by utilizing ground truth information from monthly data in Classify_STAC.ipynb.
+Additionally tests with Neuronal Network are added in multi_layer.ipynb
